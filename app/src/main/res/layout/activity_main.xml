@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sit_cliff01"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/goal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="72dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="#0D47A1"
+            android:text="more" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mindful"
+            android:layout_toRightOf="@id/more"
+            android:paddingLeft="4dp"
+            android:textSize="64sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#0D47A1"
+            android:text="mindful"
+            android:layout_weight="0.90" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/icons"
+        android:orientation="vertical"
+        android:layout_below="@id/goal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="18dp">
+
+        <ImageView
+            android:id="@+id/iconBreathing"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:src="@drawable/breathing"/>
+
+        <ImageView
+            android:id="@+id/iconObservation"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:src="@drawable/observation"/>
+
+        <ImageView
+            android:id="@+id/iconAwareness"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:src="@drawable/awareness"/>
+
+        <ImageView
+            android:id="@+id/iconListening"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:src="@drawable/listening"/>
+
+        <ImageView
+            android:id="@+id/iconImmersion"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:src="@drawable/immersion"/>
+
+        <ImageView
+            android:id="@+id/iconAppreciation"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:src="@drawable/appreciation"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lessons"
+        android:orientation="vertical"
+        android:layout_below="@id/goal"
+        android:layout_toRightOf="@id/icons"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="28sp"
+            android:fontFamily="cursive"
+            android:textColor="#1976D2"
+            android:text="breathing"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="28sp"
+            android:fontFamily="cursive"
+            android:textColor="#1E88E5"
+            android:text="observation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="28sp"
+            android:fontFamily="cursive"
+            android:textColor="#2196F3"
+            android:text="awareness"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="28sp"
+            android:fontFamily="cursive"
+            android:textColor="#90CAF9"
+            android:text="listening"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="28sp"
+            android:fontFamily="cursive"
+            android:textColor="#BBDEFB"
+            android:text="immersion"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="28sp"
+            android:fontFamily="cursive"
+            android:textColor="#E3F2FD"
+            android:text="appreciation"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
